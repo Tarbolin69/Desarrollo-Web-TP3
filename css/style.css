@@ -17,6 +17,7 @@ footer {
   padding: 5px;
   color: white;
   text-align: center;
+  border-top: 12px solid #ffe6a7;;
 }
 
 h1 {
@@ -49,8 +50,7 @@ a:visited {
 /* Las cosas del header */
 
 .header {
-    border-style: groove;
-    border-width: 2px;
+    border-bottom: 12px solid #FFE6A7;;
     overflow: hidden;
     color: white;
     background-color: #6F1D1B;
@@ -145,6 +145,7 @@ button {
     position: relative;
     text-align: center;
     color: white;
+    border-bottom: 12px solid #ffe6a7;;
 }
 
 #boxes {
@@ -166,4 +167,16 @@ button {
   float: left;
   width: 30%;
   text-align: center;
+}
+.google-map {
+     padding-bottom: 50%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
 }
