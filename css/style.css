@@ -8,40 +8,37 @@ body {
     color: white;
     background-image: linear-gradient(to bottom, #432818, #52301c, #62391f, #724223, #834b26, #8d542b, #985d2f, #a26734, #a8723c, #af7d44, #b5894d, #bb9457);
     font-family: "Josefin Sans";
+    font-size: 16px;
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
-p {
-    font-size: 16px;
+#p-inicial {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 /* Colores y Posición de Texto */
 
 footer {
-  background-color: #6F1D1B;
-  padding: 5px;
-  color: white;
-  text-align: center;
-  border-top: 12px solid #ffe6a7;;
+    background-color: #6F1D1B;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-top: 12px solid #ffe6a7;
+    bottom: 0;
 }
 
 h1 {
-        color: #FFE6A7;
-        text-align: center;
-        font-family: "Josefin Slab";
+    color: #FFE6A7;
+    text-align: center;
+    font-family: "Josefin Slab";
 }
 h2 {
-        color: #FFE6A7;
-        font-family: "Josefin Slab";
-}
-.titulo {
-  position: absolute;
-  font-size: 25px;
-  text-shadow: 2px 2px 0px black;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    color: #FFE6A7;
+    font-family: "Josefin Slab";
 }
 
 /* Los Links */
@@ -61,48 +58,38 @@ a:visited {
     color: white;
     background-color: #6F1D1B;
     padding: 20px 10px;
+    min-height: 50px;
+    line-height: 50px;
 }
 
 .header a {
-  float: left;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .header a:hover {
-  background-color: #370617;
-  color: #FFBA08;
+    background-color: #370617;
+    color: #FFBA08;
 }
 
 .header a.active {
-  background-color: #FFE6A7;
-  color: black;
+    background-color: #FFE6A7;
+    color: black;
 }
 
 .header-right {
-  float: right;
-}
-
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
+    float: right;
 }
 
 .contenedor{
@@ -111,43 +98,27 @@ a:visited {
     overflow: hidden;
 }
 
-/* NEWSLETTER */
-
-#newsletter{
-    min-height: 30px;
-    padding: 15px;
-    color: aliceblue;
-    background-color: #6F1D1B;
-}
-
-#newsletter h3{
-    float: left;
-}
-
-#newsletter form{
-    float: right;
-    margin-top: 15px;
-}
-
-#newsletter input[type="email"]{
-    padding: 4px;
-    border: 2px solid #FFBA08;
-    border-radius: 4px;
-    height: 20px;
-    width: 200px;
-}
-
 button {
-    height: 32px;
-    background-color: #f48c06;
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #FFE6A7;
+    color:#370617;
     border: 2px solid #FFBA08;
-    border-radius: 4px;
-    padding: 0 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #370617;
+    color: #FFBA08 ;
 }
 
 .fa{
     font-size: 40px;
 }
+
 .img_titulo {
     position: relative;
     text-align: center;
@@ -156,34 +127,179 @@ button {
 }
 
 #boxes {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 #boxes h2 {
-  color: seagreen;
-  font-size: 25px;
-  text-align: left;
+    color: seagreen;
+    font-size: 25px;
+    text-align: left;
 }
 #boxes img {
-  width: 225px;
+    width: 225px;
 }
 #boxes p {
-  font-size: 20px;
-  padding: 0px, 20px;
+    font-size: 20px;
+    padding: 0px, 20px;
 }
 .boxes {
-  float: left;
-  width: 30%;
-  text-align: center;
+    float: left;
+    width: 30%;
+    text-align: center;
 }
 .google-map {
-     padding-bottom: 50%;
-     position: relative;
+    padding-bottom: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .google-map iframe {
-     height: 100%;
-     width: 100%;
-     left: 0;
-     top: 0;
-     position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.texto_adopciones {
+    margin-bottom: 30px;
+}
+
+.campaña{
+    margin-bottom: 100px;
+}
+.Info1,
+.Info2,
+.Info3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Info1{
+    padding-bottom: 20px;
+    border-bottom: #6F1D1B 5px solid;
+
+}
+.Info2{
+    padding-bottom: 20px;
+    border-bottom: #6F1D1B 5px solid;
+
+}
+
+.Info1 img,
+.Info2 img,
+.Info3 img {
+    flex: 100%;
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.Info1 p,
+.Info2 p,
+.Info3 p {
+    flex: 1;
+    font-size: 25px;
+}
+
+.contenedor_formulario1 {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+.formulario_grupo{
+  min-width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_grupo2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 5px auto;
+  margin-bottom: 25px;
+}
+
+/* SON ESTAS CINCO: */
+
+.contenedor_formulario textarea {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contenedor_formulario input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #FFE6A7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contenedor_formulario input[type="submit"]:hover {
+  background-color: #370617;
+  color: #FFBA08;
+}
+
+.contenedor_formulario input, label{
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.contenedor_formulario label{
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    .contenedor_formulario1 {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        padding: 0 35px;
+    }
+
+    .formulario_grupo{
+        min-width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario_grupo2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin: 5px auto;
+        margin-bottom: 25px;
+        padding: 0 35px;
+    }
+    .Info1 p, .Info2 p, .Info3 p {
+        font-size: 15px;
+    }
+    .campaña h2 {
+        text-align: center;
+    }
 }
