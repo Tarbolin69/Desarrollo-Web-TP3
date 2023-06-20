@@ -11,7 +11,6 @@ body {
     font-size: 16px;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 50px;
 }
 
 #p-inicial {
@@ -29,7 +28,6 @@ footer {
     text-align: center;
     border-top: 12px solid #ffe6a7;
     bottom: 0;
-    position: absolute;
     width: 100%;
     min-height: 100px;
 }
@@ -125,7 +123,7 @@ button {
     border: 2px solid #FFBA08;
     border-radius: 10px;
     padding: 10px 10px;
-    margin-bottom:200px;
+    margin: 10px;
 }
 
 button:hover {
