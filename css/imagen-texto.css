@@ -29,3 +29,15 @@
 .text-box h2 {
     font-size: 42px;
 }
+@media screen and (max-width: 768px) {
+.wrapper img{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.wrapper-right img{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+}

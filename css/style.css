@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     position: relative;
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 
 #p-inicial {
@@ -29,6 +30,10 @@ footer {
     text-align: center;
     border-top: 12px solid #ffe6a7;
     bottom: 0;
+    position: absolute;
+    width: 100%;
+    
+    min-height: 100px;
 }
 
 h1 {
@@ -97,8 +102,21 @@ a:visited {
     margin: auto;
     overflow: hidden;
 }
+.contenedor2{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  
+}
+.perro{
+    margin-bottom: 170px;
+}
+.perro2{
+    margin-bottom: 170px;
+}
 
 button {
+    margin-top: 10px;
     font-family: "Josefin Sans";
     font-weight: bold;
     font-size: 25px;
@@ -107,7 +125,7 @@ button {
     border: 2px solid #FFBA08;
     border-radius: 10px;
     padding: 10px 10px;
-    margin-bottom: 10px;
+    margin-bottom:200px;
 }
 
 button:hover {
@@ -147,14 +165,16 @@ button:hover {
     text-align: center;
 }
 .google-map {
+    width: 60%;
     padding-bottom: 50%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .google-map iframe {
-    height: 100%;
+    height: 60%;
     width: 100%;
     left: 0;
     top: 0;
@@ -162,7 +182,8 @@ button:hover {
 }
 
 .texto_adopciones {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 
 .campaña{
@@ -184,6 +205,9 @@ button:hover {
     padding-bottom: 20px;
     border-bottom: #6F1D1B 5px solid;
 
+}
+.Info3{
+    margin-bottom: 200px;
 }
 
 .Info1 img,
@@ -269,6 +293,31 @@ button:hover {
     .header-right {
         float: none;
     }
+    .perro{
+        margin-bottom: 0;
+
+    }
+    .perro2{
+        margin-bottom: 0;
+    }
+    .texto_adopciones button{
+        margin-bottom: 0;
+    }
+    .contenedor2 button{
+        margin-bottom: 200px;
+    }
+    .google-map {
+        width: 100%;
+      margin-bottom: 250px;
+      background-size: cover;
+    }
+    .contenedor_formulario{
+        margin-bottom: 200px;
+    }
+    .texto_adopciones {
+      margin-bottom: 200px;
+    }
+
     .contenedor_formulario1 {
         max-width: 700px;
         margin: 0 auto;
@@ -299,7 +348,11 @@ button:hover {
     .Info1 p, .Info2 p, .Info3 p {
         font-size: 15px;
     }
+    .Info3{
+        margin-bottom: 200px;
+    }
     .campaña h2 {
         text-align: center;
     }
+}
 }
