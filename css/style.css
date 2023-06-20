@@ -161,15 +161,12 @@ button:hover {
 }
 
 .google-map {
-    width: 60%;
     padding-bottom: 50%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .google-map iframe {
-    height: 60%;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -300,14 +297,10 @@ button:hover {
         margin-bottom: 0;
     }
 
-    .contenedor2 button{
-        margin-bottom: 200px;
-    }
 
     .google-map {
         width: 100%;
-      margin-bottom: 250px;
-      background-size: cover;
+        background-size: cover;
     }
 
     .contenedor_formulario{
