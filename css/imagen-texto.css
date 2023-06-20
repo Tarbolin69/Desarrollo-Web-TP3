@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 80px auto;
+    margin: 50px auto;
     width: 70%;
 }
 
@@ -13,7 +13,7 @@
 
 
 .wrapper-right {
-    margin: 150px auto;
+    margin: 120px auto;
     margin-bottom: 80px;
     width: 70%;
 }
@@ -30,14 +30,14 @@
     font-size: 42px;
 }
 @media screen and (max-width: 768px) {
-.wrapper img{
-    width: 100%;
-    margin: auto;
-    margin-bottom: 10px;
-}
-.wrapper-right img{
-    width: 100%;
-    margin: auto;
-    margin-bottom: 10px;
-}
+    .wrapper img{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .wrapper-right img{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
