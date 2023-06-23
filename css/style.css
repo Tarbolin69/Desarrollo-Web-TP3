@@ -194,6 +194,16 @@ button:hover {
     display: block;
 }
 
+.img_donaciones img {
+    width: 800px;
+    max-width: 1250px;
+    max-height: 300px;
+    border: 5px solid #6F1D1B;
+    border-radius: 10px;
+    
+
+}
+
 #boxes {
     margin-top: 20px;
 }
