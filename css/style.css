@@ -33,6 +33,24 @@ footer {
     min-height: 100px;
 }
 
+div.footer-logos ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+div.footer-logos img {
+    float: right;
+    border-left: 3px solid black; margin: 5px;
+}
+
+div.footer-logos li {
+    margin: 5px;
+}
+
+
 h1 {
     color: #FFE6A7;
     text-align: center;
@@ -71,10 +89,11 @@ header a {
     display: flex;
     align-items: center;
     max-width: 5rem;
-
 }
 
-
+.uade-imagen img {
+    max-width: 100%;
+}
 
 nav a{
     font-weight: 600;
@@ -110,8 +129,6 @@ header a.active {
 
 
 @media screen and (max-width: 768px) {
-
-
 
   .nav{
     opacity: 0;
