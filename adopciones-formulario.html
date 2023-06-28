@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/app.js"></script>
+    <script defer src="js/app.js"></script>
 </head>
 <body>
     <header>
@@ -18,12 +18,16 @@
             <img src="img/apaade-logo-blanco.png" alt="El logo del refugio apaade">
             <h2 class="nombre-empresa">Refugio Apaade</h2>
         </a>
-        <nav>
-            <a href="index.html">Inició</a>
-            <a href="voluntarios.html">Voluntarios</a>
-            <a href="donaciones.html">Donaciónes</a>
-            <a href="adopciones.html" class="active">Adopciónes</a>
-            <a href="campañas.html">Campañas</a>
+        <button id="abrir" class="abrir-menu"><b class="fa-solid fa-bars"></b></button>
+        <nav class="nav" id="nav" >
+            <button class="cerrar-menu" id="cerrar" style="font-size: 25px; font-weight: 600;">X</b></button>
+            <ul class="nav-link">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="voluntarios.html">Voluntarios</a></li>
+            <li><a href="donaciones.html" >Donaciónes</a></li>
+            <li><a href="adopciones.html" >Adopciónes</a></li>
+            <li><a href="campañas.html" >Campañas</a></li>
+        </ul>
         </nav>
     </header>
     <section class="contenedor">

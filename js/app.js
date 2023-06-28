@@ -1,11 +1,12 @@
-// Modals de Donación
+/* Menu de hamburguesa */
+const nav =document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-const dialog = document.getElementById("formulario")
+abrir.addEventListener("click",()=>{
+   nav.classList.add("visible"); 
+})
+cerrar.addEventListener("click",()=> {
+    nav.classList.remove("visible");
+})
 
-function mostrarLoginDialog(){
-    dialog.showModal()
-}
-
-function cerrarLoginDialog(){
-    dialog.close()
-}

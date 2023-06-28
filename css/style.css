@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     position: relative;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 #p-inicial {
@@ -54,14 +55,11 @@ a:visited {
 
 header {
     display: flex;
-    min-height: 75px;
     background-color: #6F1D1B;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 2rem;
     border-bottom: 12px solid #FFE6A7;
-    min-height: 50px;
-    line-height: 50px;
 }
 
 header a {
@@ -72,12 +70,11 @@ header a {
 .logo {
     display: flex;
     align-items: center;
+    max-width: 5rem;
+
 }
 
-.logo img {
-    height: 70px;
-    margin-right: 10px;
-}
+
 
 nav a{
     font-weight: 600;
@@ -95,58 +92,72 @@ header a.active {
     background-color: #FFE6A7;
     color: black;
 }
+.abrir-menu{
+    display: none;
+
+}
+.nav{
+    list-style-type: none;
+}
+.nav-link{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+.cerrar-menu{
+   display: none;
+}
 
 
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
+
+
+
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: end;
+    background-color: #432818 ;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+  }
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link{
+    flex-direction: column;
+    align-items: end;
+
+  }
+
+    .abrir-menu{
+        display: block;
     }
-    nav {
-        padding: 10px 0px;
+
+    .cerrar-menu{
+        display: block;
+        margin: 5px 0px;
+        font-size: 1.25rem;
     }
+  .logo img{
+    height: 75px;
+  }
 }
-
-/* Las cosas del header
-.header {
-    border-bottom: 12px solid #FFE6A7;
-    overflow: hidden;
-    color: white;
-    background-color: #6F1D1B;
-    padding: 20px 10px
-    min-height: 50px;
-    line-height: 50px;
-}
-
-.header a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.header a:hover {
-    background-color: #370617;
-    color: #FFBA08;
-}
-
 .header a.active {
     background-color: #FFE6A7;
     color: black;
 }
 
-.header-right {
-    float: right;
-}
-*/
+
 
 .contenedor{
     width: 80%;
@@ -184,7 +195,6 @@ button:hover {
 }
 
 .img_titulo {
-    position: relative;
     text-align: center;
     color: white;
     border-bottom: 12px solid #ffe6a7;
@@ -200,6 +210,7 @@ button:hover {
     max-height: 300px;
     border: 5px solid #6F1D1B;
     border-radius: 10px;
+
 }
 
 #boxes {
