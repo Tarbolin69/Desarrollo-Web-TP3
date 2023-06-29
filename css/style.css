@@ -128,6 +128,12 @@ header a.active {
 }
 
 
+#boxes .box {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
 
   .nav{
@@ -149,6 +155,12 @@ header a.active {
     opacity: 1;
     visibility: visible;
   }
+
+    #boxes .box {
+        float: none;
+        width: 100%;
+        margin: 25px 0;
+    }
 
   .nav-link{
     flex-direction: column;
@@ -231,6 +243,18 @@ button:hover {
 
 #boxes {
     margin-top: 20px;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 #boxes h2 {
